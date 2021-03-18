@@ -37,7 +37,6 @@ function mathOperation(arg1, arg2, operation) {
             break;
         default:
             alert('Введена некорректная операция')
-            mathOperation();
     }
 }
 

@@ -11,7 +11,7 @@
 
 let money = prompt('Введите количество рублей, которые вы хотите положить на счет в банке: ', '');
 // Предполагается, что всегда вводится неотрицательное число(без пустых строк, чисел и отмен)
-if ((money >= '10') && (money <= '19')) {
+if (((+(money.charAt(money.length - 2) + money.charAt(money.length - 1))) >= 10) && ((+(money.charAt(money.length - 2) + money.charAt(money.length - 1))) <= 19)) {
     alert('Ваша сумма в ' + money + ' рублей успешно зачислена.');
 } else {
     switch (money.charAt(money.length - 1)) {
